@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YanaOS | Portfolio | Web developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo-yos.png">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="overflow-wrap">
+<header>
+    <div id="sound">
+        <audio id="myAudio" >
+            <source src="myAudio.mp3">
+        </audio>
+        <button><img class="soundBtn soundOff" src="soundOff.png" alt="soundOffIcon" width="40px"></button>
+        <button><img class="soundBtn soundOn" src="soundOn.png" alt="soundOnIcon" width="40px"></button>
+        <span class="sound">Sound</span>
+        <div class="on-off">
+            <span id="off" class="off">OFF</span>
+            <span id="on" class="on">ON</span>
+        </div>
+        <div class="containerLanguages">
+            <div class="langues">
+                <button onclick="changeLanguage('en')">EN</button>
+                <button onclick="changeLanguage('ru')">RU</button>
+            </div>
+        </div>
+    </div>
+    <div class="btns-container">
+        <button><img class="bars btnMenu" src="hambugerIcon.png" alt="hamburgerIcon" width="50px"></button>
+        <button><img class="times btnClose" src="closeIcon.png" alt="closeIcon" width="50px"></button>
+    </div>
+</header>
+
+<aside class="aside">
+    <div class="aside-wrapper">
+        <div class="logo-section">
+            <a class="logo" rel="home" href="#">
+                <img src="logo-yos.png" alt="logo YOs">
+            </a>
+            <span class="webDeveloper">Web Developer</span>
+        </div>
+
+        <nav class="nav-links crcl-effect">
+            <a href="#section-about" class="navLink aboutLink">About</a>
+            <a href="#section-WebProjects" class="navLink sitesLink">Web sites</a>
+            <a href="#section-WebApps" class="navLink appLink">Applications</a>
+            <a href="#section-contact" class="navLink contactLink">Contact</a>
+        </nav>
+
+        <ul class="social-icons">
+            <li>
+                <a href="https://wa.me/79130002991" target="blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/yana_osuhovskaya" target="blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:yanaosukhovskaya@gmail.com" target="blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                        <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                        <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/YanaOSuh" target="blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</aside>
+
+<section id="section-home">
+    <div class="section-home">
+        <div class="homeContainer">
+            <div class="text-zone">
+                <h1 id="greeting">Hi, <br> I'm
+                    <span class="yLetter">Y</span>ana,<br> web&nbsp;developer 
+                </h1>
+                <p class="grey-text">Front End Developer</p>
+                <br>
+                <a href="https://wa.me/79130002991" class="contact-button homepageBtn" target="_blank">
+                    <div>
+                        <span class="bg"></span>
+                        <span class="base"></span>
+                        <span class="text">Contact me</span>
+                    </div>
+                </a>
+            </div>
+            <div class="image-zone">
+                <img class="hero-image" src="heropic-big.png" alt="hero image - girl with laptop" width="600px">
+                <div>
+                    <img src="idea.png" class="heroIcon idea" alt="idea icon">
+                    <img src="brackets.png" class="heroIcon brackets" alt="brackets icon">
+                    <img src="headphones.png" class="heroIcon headphones" alt="headphones icon">
+                </div>
+            </div>
+        </div>
+        <div class="arrow">
+            <a href="#section-about">
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section id="section-about">
+<div class="section-about">
+    <div class="aboutInfo">
+        <div class="aboutText">
+            <div class="fake-text">About</div>
+            <div class="header" data-aos="fade-right" data-aos-duration="1000">
+                <h2 class="header-about">About me</h2>
+            </div>
+            <p class="parOne">Hi there!
+            <p class="parTwo">I'm <span class="myName">YANA OSukhovskaya</span></p>
+            <p class="parThree">A web developer passionate about designing and coding beautiful, functional, 
+                and user-friendly websites and applications.
+            </p>
+            <p class="parFour"> Your website often serves as the first impression for potential customers, 
+                so it's essential to make it count. I aim to create projects that are not 
+                only unique but also a true reflection of your individuality. 
+                Attention to detail is at the heart of everything I design and code.
+            </p>
+            <p class="parFive"> Feel free to explore my portfolio below. 
+                If you believe I’m the right fit for your project, 
+                don’t hesitate to reach out via 
+                <span><a class="sendEmail" href="#section-contact">Email</a></span>.
+            </p> 
+            <p class="parSix">Let me help you tell your story through web development.</p>
+        </div>
+        <div class="aboutSkills">
+            <span class="content"></span>
+        </div>
+    </div>
+</div>
+</section>
+
+<div class="bgBack"></div>
+
+<section id="section-WebProjects">
+    <div class="section-WebProjects">
+        <div class="header projectHeader" data-aos="fade-right" data-aos-duration="1000">
+            <h2 class="header-websites">Websites
+                <span>
+                    <img src="gear.png" id="header-websites-gear" class="infinity-icon" alt="gear icon">
+                </span>
+            </h2>
+        </div>
+        <div class="grid">
+            <figure class="card" data-aos="fade-up" data-aos-duration="1000">
+                <p class="projectText siteOne">PHOTOGRAPHER website</p>
+                <br>
+                <div class="project-stack">
+                    <div class="stack-btn">HTML</div>
+                    <div class="stack-btn">CSS</div>
+                    <div class="stack-btn">Bootstrap</div>
+                </div>
+                <img class="cardImage" src="website1.png" alt="" width="350px">
+                <button class="prjct-btn">
+                    <a class="prjct-btn-a" href="https://yanaos-photographer-landingpage.netlify.app/" target="_blank">
+                        View project
+                    </a>
+                </button>
+            </figure>
+            <figure class="card" data-aos="fade-up" data-aos-duration="1000">
+                <p class="projectText siteTwo">SIBCOINS website</p>
+                <br>
+                <div class="project-stack">
+                    <div class="stack-btn">HTML</div>
+                    <div class="stack-btn">CSS</div>
+                    <div class="stack-btn">Javascript</div>
+                </div>
+                <img class="cardImage" src="website2.png" alt="" width="350px">
+                <button class="prjct-btn">
+                    <a class="prjct-btn-a" href="https://yanaos-coins.netlify.app/" target="_blank">
+                        View project
+                    </a>
+                </button>
+            </figure>
+        </div>
+    
+        <div class="grid">
+            <figure class="card" data-aos="fade-up" data-aos-duration="1000">
+                <p class="projectText siteThree">PET PLANET store</p>
+                <br>
+                <div class="project-stack">
+                    <div class="stack-btn">HTML</div>
+                    <div class="stack-btn">SCSS</div>
+                    <div class="stack-btn">Javascript</div>
+                    <div class="stack-btn">API</div>
+                </div>
+                <img class="cardImage" src="website3.png" alt="" width="350px">
+                <button class="prjct-btn">
+                    <a class="prjct-btn-a" href="https://yanaos-pet-planet.netlify.app/" target="_blank">
+                        View project
+                    </a>
+                </button>
+            </figure>
+            <figure class="card" data-aos="fade-up" data-aos-duration="1000">
+                <p class="projectText siteFour">COZY COFFEE cafe</p>
+                <br>
+                <div class="project-stack">
+                    <div class="stack-btn">HTML</div>
+                    <div class="stack-btn">CSS</div>
+                    <div class="stack-btn">Bootstrap</div>
+                    <div class="stack-btn">GSAP</div>
+                </div>
+                <img class="cardImage" src="website4.png" alt="" width="350px">
+                <button class="prjct-btn">
+                    <a class="prjct-btn-a" href="https://yanaos-cozy-coffee.netlify.app/" target="_blank">
+                        View project
+                    </a>
+                </button>
+            </figure>
+        </div>
+
+        <div class="grid gridPadding">
+            <figure class="card" data-aos="fade-up" data-aos-duration="1000">
+                <p class="projectText siteFive">GOSHOP Clothing</p>
+                <br>
+                <div class="project-stack">
+                    <div class="stack-btn">React</div>
+                    <div class="stack-btn">under development</div>
+                </div>
+                <img class="cardImage" src="website5.png" alt="" width="350px">
+                <button class="prjct-btn">
+                    <a class="prjct-btn-a" href="https://yanaos-goshop-store.netlify.app/" target="_blank">
+                        View project
+                    </a>
+                </button>
+            </figure>
+            <figure class="card" data-aos="fade-up" data-aos-duration="1000">
+                <p class="projectText siteSix">COOKIES store</p>
+                <br>
+                <div class="project-stack">
+                    <div class="stack-btn">Angular</div>
+                </div>
+                <img class="cardImage" src="website6.png" alt="" width="350px">
+                <button class="prjct-btn">
+                    <a class="prjct-btn-a" href="https://yanaosuh.github.io/cookies/" target="_blank">
+                        View project
+                    </a>
+                </button>
+            </figure>
+        </div>
+    </div>
+    </section>
+    
+    <section id="section-WebApps">
+    <div class="section-WebProjects">
+        <div class="header projectHeader" data-aos="fade-right" data-aos-duration="1000">
+            <h2 class="header-apps">Applications
+                <span>
+                    <img src="gear.png" id="header-apps-gear" class="infinity-icon" alt="gear icon">
+                </span>
+            </h2>
+        </div>
+        <div class="grid">
+            <figure class="card" data-aos="fade-up" data-aos-duration="1000">
+                <p class="projectText appOne">QUIZ Pirates</p>
+                <br>
+                <div class="project-stack">
+                    <div class="stack-btn">HTML</div>
+                    <div class="stack-btn">CSS</div>
+                    <div class="stack-btn">Javascript</div>
+                </div>
+                <img class="cardImage" src="app1.png" alt="" width="350px">
+                <button class="prjct-btn">
+                    <a class="prjct-btn-a" href="https://yanaos-quiz-pirates.netlify.app/" target="_blank">
+                        View project
+                    </a>
+                </button>
+            </figure>
+            <figure class="card" data-aos="fade-up" data-aos-duration="1000">
+                <p class="projectText appTwo">RECIPE finder</p>
+                <br>
+                <div class="project-stack">
+                    <div class="stack-btn">React</div>
+                    <div class="stack-btn">API</div>
+                </div>
+                <img class="cardImage" src="app2.png" alt="" width="350px">
+                <button class="prjct-btn">
+                    <a class="prjct-btn-a" href="https://yanaos-recipe-finder.netlify.app/" target="_blank">
+                        View project
+                    </a>
+                </button>
+            </figure>
+        </div>
+
+        <div class="grid">
+            <figure class="card" data-aos="fade-up" data-aos-duration="1000">
+                <p class="projectText appThree">WEATHER now</p>
+                <br>
+                <div class="project-stack">
+                    <div class="stack-btn">HTML</div>
+                    <div class="stack-btn">CSS</div>
+                    <div class="stack-btn">Javascript</div>
+                    <div class="stack-btn">API</div>
+                </div>
+                <img class="cardImage" src="app5.png" alt="" width="350px">
+                <button class="prjct-btn">
+                    <a class="prjct-btn-a" href="https://yanaos-weather-forecast.glitch.me/" target="_blank">
+                        View project
+                    </a>
+                </button>
+            </figure>
+            <figure class="card" data-aos="fade-up" data-aos-duration="1000">
+                <p class="projectText appFour">TO DO list</p>
+                <br>
+                <div class="project-stack">
+                    <div class="stack-btn">React</div>
+                </div>
+                <img class="cardImage" src="app6.png" alt="" width="350px">
+                <button class="prjct-btn">
+                    <a class="prjct-btn-a" href="https://yanaos-todolist.netlify.app/" target="_blank">
+                        View project
+                    </a>
+                </button>
+            </figure>
+        </div>
+    
+        <div class="grid gridPadding">
+            <figure class="card" data-aos="fade-up" data-aos-duration="1000">
+                <p class="projectText appFive">СHRISTMAS countdown</p>
+                <br>
+                <div class="project-stack">
+                    <div class="stack-btn">HTML</div>
+                    <div class="stack-btn">CSS</div>
+                    <div class="stack-btn">Javascript</div>
+                </div>
+                <img class="cardImage" src="app3.png" alt="" width="350px">
+                <button class="prjct-btn">
+                    <a class="prjct-btn-a" href="https://yanaos-christmas-countdown.glitch.me/" target="_blank">
+                        View project
+                    </a>
+                </button>
+            </figure>
+            <figure class="card" data-aos="fade-up" data-aos-duration="1000">
+                <p class="projectText appSix">CRACK the safe</p>
+                <br>
+                <div class="project-stack">
+                    <div class="stack-btn">HTML</div>
+                    <div class="stack-btn">CSS</div>
+                    <div class="stack-btn">Javascript</div>
+                </div>
+                <img class="cardImage" src="app4.png" alt="" width="350px">
+                <button class="prjct-btn">
+                    <a class="prjct-btn-a" href="https://yanaos-guess-number-game.glitch.me/" target="_blank">
+                        View project
+                    </a>
+                </button>
+            </figure>
+        </div>
+    </div>
+    </section>
+    
+    <div class="bgBack"></div>
+    
+    <div id="particles-js"></div>
+    <section id="section-contact">
+    <div class="section-contact">
+        <div class="contact-heading">
+            <div class="fake-text-at">@</div>
+            <div class="header" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
+                <h2 class="header-contact">Contact me</h2>
+            </div>
+            <p class="contactText">Please do not hesitate to contact me if you have any questions, 
+                new projects in mind or job offers.
+            </p>
+        </div>
+    <form action="https://formspree.io/f/xwkgbozd" method="POST" class="contact-form">
+        <input type="hidden" name="_language" value="en">
+        <div class="form-wrapper">
+            <div class="form-group">
+                <label>
+                <input type="text" name="name" placeholder="Name" class="name" required="">
+                <span></span>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                <input class="email" type="email" name="email" placeholder="Email" required="">
+                <span></span>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                <textarea type="text" name="message" placeholder="Message" class="textarea" required=""></textarea>
+                <span></span>
+                </label>
+                <span></span>
+            </div>
+        </div>
+        <button type="submit" class="contact-button submit-button">
+            <div>
+                <span class="bg"></span>
+                <span class="base"></span>
+                <span class="text sendButton">Send message</span>
+            </div>
+        </button>
+    </form>
+    </div>
+    </section>
+    
+    <footer>
+    <div class="footer-content">
+        <ul class="social-icons-footer">
+            <li>
+                <a href="https://wa.me/79130002991" target="blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/yana_osuhovskaya" target="blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+                    </svg>
+                </a>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:yanaosukhovskaya@gmail.com" target="blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                        <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                        <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/YanaOSuh" target="blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        <div class="text-footer">
+            <p>Yana OSukhovskaya &copy;2024</p>
+        </div>
+    </div>
+    </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    
+    <script>AOS.init();</script>
+    <script src="index.js"></script>
+    <script src="translate.js"></script>
+</body>
+</html>
