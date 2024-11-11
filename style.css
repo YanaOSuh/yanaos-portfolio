@@ -79,7 +79,7 @@ header {
 .containerLanguages button {
     color:  rgb(161, 23, 216);
     margin-right: 5px;
-    font-family: "La Belle Aurore", cursive;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 800;
     opacity: 0.4;
